@@ -18,7 +18,7 @@ def take_command():
         with sr.Microphone() as source:
             print('listening...')
             talk('listening...')
-            voice = listener.listen(source, phrase_time_limit=9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999)
+            voice = listener.listen(source)
             command = listener.recognize_google(voice, language="None") #In place of None, put the initials of the speech recognition language. You will be able to see your initials here https://py-googletrans.readthedocs.io/en/latest/. After that, the program will accept English and the language you entered.
             command = command.lower()
             
