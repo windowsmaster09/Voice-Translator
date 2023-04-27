@@ -4,5 +4,7 @@ This Python code is a program to recognize voice commands 🗣️, translate tex
 The modules you will need:
 
 Speech Recognition: pip install SpeechRecognition
+
 Bot Voice: pip install pyttsx3
+
 Translator: pip install googletrans==4.0.0rc1
